@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\fady\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\fady\\.nuget\\packages"
+    ]
+  }
+}
