@@ -14,7 +14,7 @@ namespace project_OS
             while (true)
             {
                 Console.Write(currentPath.Trim());
-                string inputuser = Console.ReadLine()..ToLower();
+                string inputuser = Console.ReadLine().ToLower();
                 if (!inputuser.Contains(" "))
                 {
                     if (inputuser == "help")
