@@ -14,22 +14,22 @@ namespace project_OS
             while (true)
             {
                 Console.Write(currentPath.Trim());
-                string inputuser = Console.ReadLine();
+                string inputuser = Console.ReadLine()..ToLower();
                 if (!inputuser.Contains(" "))
                 {
-                    if (inputuser.ToLower() == "help")
+                    if (inputuser == "help")
                     {
                         cmd.help();
                     }
-                    else if (inputuser.ToLower() == "quit")
+                    else if (inputuser == "quit")
                     {
                         cmd.quit();
                     }
-                    else if (inputuser.ToLower() == "cls")
+                    else if (inputuser == "cls")
                     {
                         cmd.cls();
                     }
-                    else if (inputuser.ToLower() == "cd")
+                    else if (inputuser == "cd")
                     {
                         if (currentDirectory.parent != null)
                         {
@@ -38,39 +38,39 @@ namespace project_OS
                         }
                         currentPath = new string(currentDirectory.fileorDirName);
                     }
-                    else if (inputuser.ToLower() == "md")
+                    else if (inputuser == "md")
                     {
                         Console.WriteLine("The syntax of the command is incorrect.");
                     }
-                    else if (inputuser.ToLower() == "rd")
+                    else if (inputuser == "rd")
                     {
                         Console.WriteLine("The syntax of the command is incorrect.");
                     }
-                    else if (inputuser.ToLower() == "dir")
+                    else if (inputuser == "dir")
                     {
                         cmd.dir();
                     }
-                    else if (inputuser.ToLower() == "import")
+                    else if (inputuser == "import")
                     {
                         Console.WriteLine("The syntax of the command is incorrect.");
                     }
-                    else if (inputuser.ToLower() == "type")
+                    else if (inputuser == "type")
                     {
                         Console.WriteLine("The syntax of the command is incorrect.");
                     }
-                    else if (inputuser.ToLower() == "export")
+                    else if (inputuser == "export")
                     {
                         Console.WriteLine("The syntax of the command is incorrect.");
                     }
-                    else if (inputuser.ToLower() == "del")
+                    else if (inputuser == "del")
                     {
                         Console.WriteLine("The syntax of the command is incorrect.");
                     }
-                    else if (inputuser.ToLower() == "copy")
+                    else if (inputuser == "copy")
                     {
                         Console.WriteLine("The syntax of the command is incorrect.");
                     }
-                    else if (inputuser.ToLower() == "rename")
+                    else if (inputuser == "rename")
                     {
                         Console.WriteLine("The syntax of the command is incorrect.");
                     }
